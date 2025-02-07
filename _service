@@ -1,0 +1,15 @@
+<services>
+  <service name="obs_scm">
+    <param name="url">https://github.com/andyholmes/valent.git</param>
+    <param name="scm">git</param>
+    <param name="revision">refs/heads/main</param>
+    <param name="changesgenerate">enable</param>
+    <param name="changesauthor">zuhhaga@gmail.com</param>
+  </service>
+  <service name="tar" mode="buildtime"/>
+  <service name="set_version"/>
+  <service name="recompress" mode="buildtime">
+     <param name="compression">gz</param>
+     <param name="file">*.tar</param>
+  </service>
+</services>

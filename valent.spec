@@ -12,7 +12,7 @@ Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  meson >= 0.59.0
 BuildRequires:  fdupes
 BuildRequires:  vala
-BuildRequires:  gcc-c++ 
+BuildRequires:  gcc-c++
 BuildRequires:  cmake
 BuildRequires:  sed
 BuildRequires:  desktop-file-utils
@@ -36,7 +36,6 @@ BuildRequires:  pkgconfig(gstreamer-1.0)
 BuildRequires:  pkgconfig(gstreamer-video-1.0)
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  pkgconfig(libpipewire-0.3)
-BuildRequires:  typelib(Peas)
 BuildRequires:  cmake(libphonenumber)
 
 

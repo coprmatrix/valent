@@ -1,5 +1,5 @@
 Name:           valent
-Version:        1.0.0alpha
+Version:        1743688677.6a96a43
 Release:        0
 Summary:        Connect, control and sync devices
 License:        GPL-3.0-or-later
@@ -86,7 +86,7 @@ Valent is an implementation of the KDE Connect protocol, built on GNOME platform
 sed "s~libportal_version = .*~libportal_version = '>= 0.5'~" -i meson.build
 
 %build
-%meson
+%meson -Dwerror=false
 sed 's/--pkg=libpeas-2/--pkg=Peas-2/' -i %{_vpath_builddir}/build.ninja
 %meson_build
 
